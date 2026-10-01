@@ -1,0 +1,52 @@
+# --------------------- secrets & credentials (never commit) ----------------
+.env
+.env.*
+!.env.example
+
+# Google credentials / tokens
+credentials/
+credentials.json
+client_secret*.json
+token.json
+*.service-account.json
+service_account.json
+
+# Any other stray JSON credential/key file. The project ships no tracked JSON
+# assets, so this is a blanket guard; narrow it with "!name.json" if a JSON file
+# ever needs to be versioned.
+*.json
+
+# ------------------------------ Python -------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# ------------------------- virtual environments -----------------------------
+.venv/
+venv/
+env/
+
+# ---------------------------- test / coverage ------------------------------
+.pytest_cache/
+.coverage
+coverage.xml
+htmlcov/
+.tox/
+
+# ------------------------- project runtime output --------------------------
+logs/
+output/
+*.log
+
+# ------------------------------- tooling -----------------------------------
+.mypy_cache/
+.ruff_cache/
+.idea/
+.vscode/
+*.xlsx
