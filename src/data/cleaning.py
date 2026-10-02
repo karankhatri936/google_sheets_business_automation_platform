@@ -255,7 +255,7 @@ def prepare_frame(
         work = work.loc[~blank_mask]
 
     work, header_actions = normalize_headers(work, schema, tracker)
-    del header_actions  # actions are already registered on the shared tracker
+    # Actions are already registered on the shared tracker
 
     text_columns = {
         spec.name for spec in schema if spec.kind in ("text", "category") and spec.name in work.columns
