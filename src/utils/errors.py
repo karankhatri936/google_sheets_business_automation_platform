@@ -58,10 +58,6 @@ class ValidationError(PlatformError):
     """
 
 
-class DataSinkError(PlatformError):
-    """Raised when writing results to a sink (Sheets or local files) fails."""
-
-
 # --------------------------------------------------------------------------
 # AI interpretation layer
 # --------------------------------------------------------------------------
@@ -75,10 +71,3 @@ class AIProviderError(PlatformError):
 
 class AIResponseError(PlatformError):
     """Raised when an AI response cannot be parsed into the expected structure."""
-
-
-# --------------------------------------------------------------------------
-# Orchestration
-# --------------------------------------------------------------------------
-class PipelineError(PlatformError):
-    """Raised for unrecoverable pipeline orchestration failures."""

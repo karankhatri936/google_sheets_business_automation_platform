@@ -165,9 +165,21 @@ def build_clean_data_table(frame: pd.DataFrame, worksheet: str) -> SheetTable:
 
     rows = values_from_dataframe(frame)
     columns = list(frame.columns)
-    ordered = [SOURCE_ROW_COLUMN, "date", "order_id", "customer", "product", "category",
-               "quantity", "unit_price", "revenue", "region", "status", ORDER_MONTH_COLUMN,
-               "feedback"]
+    ordered = [
+        SOURCE_ROW_COLUMN,
+        "date",
+        "order_id",
+        "customer",
+        "product",
+        "category",
+        "quantity",
+        "unit_price",
+        "revenue",
+        "region",
+        "status",
+        ORDER_MONTH_COLUMN,
+        "feedback",
+    ]
     columns = [column for column in ordered if column in columns] + [
         column for column in columns if column not in ordered
     ]

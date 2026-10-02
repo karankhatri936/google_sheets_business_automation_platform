@@ -219,7 +219,6 @@ class WorksheetNames:
     category_analysis: str
     regional_analysis: str
     ai_insights: str
-    feedback_analysis: str
     run_log: str
 
     def ordered(self) -> tuple[str, ...]:
@@ -455,7 +454,6 @@ def _build_worksheet_names(env: Mapping[str, str]) -> WorksheetNames:
         category_analysis=_text(env, "GS_SHEET_CATEGORY_ANALYSIS", "Category_Analysis"),
         regional_analysis=_text(env, "GS_SHEET_REGIONAL_ANALYSIS", "Regional_Analysis"),
         ai_insights=_text(env, "GS_SHEET_AI_INSIGHTS", "AI_Insights"),
-        feedback_analysis=_text(env, "GS_SHEET_FEEDBACK_ANALYSIS", "Feedback_Analysis"),
         run_log=_text(env, "GS_SHEET_RUN_LOG", "Run_Log"),
     )
 
