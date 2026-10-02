@@ -16,11 +16,9 @@ CellValue = Any
 MONEY_PATTERN = "#,##0.00"
 INTEGER_PATTERN = "#,##0"
 PERCENT_PATTERN = '0.0"%"'
-TEXT_PATTERN = "@"
 
 # Formatting is intentionally restrained: a bold header row, frozen headers and
 # number formats. No decorative colours or themes.
-HEADER_BOLD = True
 HEADER_BACKGROUND = {"red": 0.93, "green": 0.94, "blue": 0.96}
 
 
